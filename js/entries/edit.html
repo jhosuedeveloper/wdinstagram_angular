@@ -1,0 +1,13 @@
+<h2>Edit {{vm.entry.author}}</h2>
+
+<form>
+  <input placeholder="Author" data-ng-model="vm.entry.author" />
+  <input placeholder="Body" data-ng-model="vm.entry.body" />
+  <input placeholder="Photo URL" data-ng-model="vm.entry.photo_url" />
+  <button type="button" data-ng-click="vm.update()"  >Update</button>
+  <button type="submit" data-ng-click="vm.destroy()" >Delete</button>
+</form>
+
+<pre>
+  {{vm.entry | json}}
+</pre>
